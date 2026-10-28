@@ -11,3 +11,11 @@ addIngredient("nori", {
     color:"#172d25",
     tags:["sushi","seaweed"]
 });
+
+addIngredient("imitation_crab", {
+    type:"butter",
+    color:"#f28a80",
+    innerColor:"#fff2e7",
+    tags:["sushi","seafood"]
+});
+
