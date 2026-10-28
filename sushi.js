@@ -46,7 +46,24 @@ addIngredient("avocado_strip", {
     tags:["sushi","fruit"]
 });
 
-addRecipe(
-    "sushi_rice+nori+imitation_crab+cucumber_strip+avocado_strip",
-    "California Roll"
-);
+
+ // === CALIFORNIA ROLL RECIPES ===
+ // Supports 16 different combinations!
+
+ const riceOptions = ["sushi_rice", "rice"];
+ const seaweedOptions = ["nori", "seaweed"];
+ const cucumberOptions = ["cucumber_strip", "cucumber"];
+ const avocadoOptions = ["avocado_strip", "guacamole"];
+
+ for (const rice of riceOptions) {
+     for (const seaweed of seaweedOptions) {
+         for (const cucumber of cucumberOptions) {
+             for (const avocado of avocadoOptions) {
+                 addRecipe(
+                     `${rice}+${seaweed}+imitation_crab+${cucumber}+${avocado}`,
+                     "California Roll"
+                 );
+             }
+         }
+     }
+ }
