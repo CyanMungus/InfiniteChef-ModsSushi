@@ -31,3 +31,16 @@ addIngredient("cucumber_strip", {
     width:1,
     tags:["sushi","vegetable"]
 });
+
+addIngredient("avocado_strip", {
+    type:"avocado",
+    color:"#8bcf68",
+    innerColor:"#c9e8a1",
+    shape:"rectangle_thinnest",
+    scale:2,
+    height:0.3,
+    width:1,
+    stackShape:null,
+    tags:["sushi","fruit"]
+});
+
