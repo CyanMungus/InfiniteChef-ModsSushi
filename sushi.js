@@ -14,7 +14,9 @@ addIngredient("nori", {
 });
 
 addIngredient("imitation_crab", {
-    type:"butter",
+    type:"meat",
+    shape:"crustacean",
+    placedShape:"rectangle_thin",
     color:"#f28a80",
     innerColor:"#fff2e7",
     tags:["sushi","seafood"]
