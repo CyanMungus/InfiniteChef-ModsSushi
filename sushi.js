@@ -46,50 +46,35 @@ addIngredient("avocado_strip", {
     tags:["sushi","fruit"]
 });
 
+addIngredient("tobiko", {
+    type: "fish_roe",
+    color: "#ff8c00",
+    shape: "circle",
+    scale: 0.3,
+    tags: ["sushi", "seafood", "roe"]
+});
 
- // === CALIFORNIA ROLL RECIPES ===
- // Supports 16 different combinations!
 
- const riceOptions = ["sushi_rice", "rice"];
- const seaweedOptions = ["nori", "seaweed"];
- const cucumberOptions = ["cucumber_strip", "cucumber"];
- const avocadoOptions = ["avocado_strip", "guacamole"];
+const riceOptions = ["sushi_rice", "rice"];
+const seaweedOptions = ["nori", "seaweed"];
+const cucumberOptions = ["cucumber_strip", "cucumber"];
+const avocadoOptions = ["avocado_strip", "guacamole"];
 
- for (const rice of riceOptions) {
-     for (const seaweed of seaweedOptions) {
-         for (const cucumber of cucumberOptions) {
-             for (const avocado of avocadoOptions) {
-                 addRecipe(
-                     `${rice}+${seaweed}+imitation_crab+${cucumber}+${avocado}`,
-                     "California Roll"
-                 );
-             }
-         }
-     }
- }
+for (const rice of riceOptions) {
+    for (const seaweed of seaweedOptions) {
+        for (const cucumber of cucumberOptions) {
+            for (const avocado of avocadoOptions) {
+                const ingredients =
+                    `${rice}+${seaweed}+imitation_crab+${cucumber}+${avocado}`;
 
- // === SUSHI MOD TAGS ===
+                // Without Tobiko
+                addRecipe(ingredients, "California Roll");
 
- // Existing Infinite Chef ingredients
- editIngredient("rice", {
-     tags:["sushi"]
- });
+                // With Tobiko
+                addRecipe(ingredients + "+tobiko", "California Roll");
+            }
+        }
+    }
+}
 
- editIngredient("seaweed", {
-     tags:["sushi","seaweed"]
- });
 
- editIngredient("cucumber", {
-     tags:["sushi","vegetable"]
- });
-
- editIngredient("guacamole", {
-     tags:["sushi"]
- });
-
- // Our custom sushi ingredients already have tags:
- // sushi_rice
- // nori
- // imitation_crab
- // cucumber_strip
- // avocado_strip
