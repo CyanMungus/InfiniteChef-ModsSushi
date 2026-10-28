@@ -6,3 +6,8 @@
      color:"#f5f2e8"
  });
 
+addIngredient("nori", {
+    type:"seaweed",
+    color:"#172d25",
+    tags:["sushi","seaweed"]
+});
