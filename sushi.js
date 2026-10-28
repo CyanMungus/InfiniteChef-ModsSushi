@@ -46,3 +46,7 @@ addIngredient("avocado_strip", {
     tags:["sushi","fruit"]
 });
 
+addRecipe(
+    "sushi_rice+nori+imitation_crab+cucumber_strip+avocado_strip",
+    "California Roll"
+);
