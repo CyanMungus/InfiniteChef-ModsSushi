@@ -67,3 +67,29 @@ addIngredient("avocado_strip", {
          }
      }
  }
+
+ // === SUSHI MOD TAGS ===
+
+ // Existing Infinite Chef ingredients
+ editIngredient("rice", {
+     tags:["sushi"]
+ });
+
+ editIngredient("seaweed", {
+     tags:["sushi","seaweed"]
+ });
+
+ editIngredient("cucumber", {
+     tags:["sushi","vegetable"]
+ });
+
+ editIngredient("guacamole", {
+     tags:["sushi"]
+ });
+
+ // Our custom sushi ingredients already have tags:
+ // sushi_rice
+ // nori
+ // imitation_crab
+ // cucumber_strip
+ // avocado_strip
